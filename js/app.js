@@ -3,6 +3,12 @@ const links = document.querySelector('.links');
 
 burger.addEventListener('click', () => {
      links.classList.toggle('show-links');
+     if (links.classList.contains('show-links')) {
+         console.log('cest le burger');
+         burger.src = 'icons/burger/close.png';
+     } else {
+         burger.src = "icons/burger/burger.png";
+     }
 })
 
 /* let numberClicked = 0;

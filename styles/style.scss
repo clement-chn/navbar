@@ -8,7 +8,7 @@ body {
   font-family: "Hind", sans-serif;
 }
 nav {
-  box-shadow: 0 1px grey;
+  box-shadow: 0 1px 15px rgb(199, 199, 199);
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
@@ -22,16 +22,23 @@ nav {
       font-weight: 600;
     }
     img {
-      width: 40px;
-      height: 40px;
+      width: 35px;
+      height: 35px;
       align-self: center;
       margin-right: 15px;
-
+      &:hover {
+        transform: rotateZ(90deg);
+      }
       @media screen and (min-width: 768px) {
         @include hide;
       }
     }
   }
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 .links {
@@ -49,6 +56,9 @@ nav {
   li {
     font-size: 1.2rem;
     margin: 15px;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
