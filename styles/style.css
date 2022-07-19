@@ -1,0 +1,108 @@
+/* il faut utiliser filter: pour changer la couleur d'image */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hind", sans-serif;
+}
+
+nav {
+  -webkit-box-shadow: 0 1px grey;
+          box-shadow: 0 1px grey;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+nav .nav-burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .nav-burger h1 {
+  margin-left: 15px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+nav .nav-burger img {
+  width: 40px;
+  height: 40px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  nav .nav-burger img {
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+.links {
+  height: 0;
+  overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .links {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-item-align: center;
+        align-self: center;
+    padding-left: 0;
+  }
+}
+
+.links li {
+  font-size: 1.2rem;
+  margin: 15px;
+}
+
+.show-links {
+  height: unset;
+  overflow: unset;
+}
+
+.social-links {
+  height: 0;
+  overflow: hidden;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .social-links {
+    height: unset;
+    overflow: unset;
+  }
+}
+
+.social-links img {
+  height: 30px;
+}
+/*# sourceMappingURL=style.css.map */

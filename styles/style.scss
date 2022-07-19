@@ -1,0 +1,71 @@
+@import "_functions.scss";
+
+/* il faut utiliser filter: pour changer la couleur d'image */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hind", sans-serif;
+}
+nav {
+  box-shadow: 0 1px grey;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-burger {
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      margin-left: 15px;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    img {
+      width: 40px;
+      height: 40px;
+      align-self: center;
+      margin-right: 15px;
+
+      @media screen and (min-width: 768px) {
+        @include hide;
+      }
+    }
+  }
+}
+
+.links {
+  @include hide;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 15px;
+  @media screen and (min-width: 768px) {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    padding-left: 0;
+  }
+  li {
+    font-size: 1.2rem;
+    margin: 15px;
+  }
+}
+
+.show-links {
+  height: unset;
+  overflow: unset;
+}
+
+.social-links {
+  @include hide;
+  align-self: center;
+  margin-right: 15px;
+  @media screen and (min-width: 768px) {
+    height: unset;
+    overflow: unset;
+  }
+  img {
+    height: 30px;
+  }
+}
